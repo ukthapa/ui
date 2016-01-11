@@ -13,19 +13,34 @@
 
 // Reset and dependencies
 @import "../../../bootstrap/assets/stylesheets/bootstrap/normalize";
+  b, strong {
+    font-weight: 500
+  }
 @import "../../../bootstrap/assets/stylesheets/bootstrap/print";
 @import "../../../bootstrap/assets/stylesheets/bootstrap/glyphicons";
 
-.test-color {
-	background-color: $gray-lighter;
-}
 
 // Core CSS
 @import "../../../bootstrap/assets/stylesheets/bootstrap/scaffolding";
 
+body {
+  color: lighten($gray, 10%);
+  font-weight: 300;
+}
+
 @import "../../../bootstrap/assets/stylesheets/bootstrap/type";
 
 //CUSTOM FONT STYLE
+
+h1, .h1,
+h2, .h2,
+h3, .h3, 
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  color: $gray-dark;
+}
+
 h1, .h1,
 h2, .h2,
 h3, .h3 {
@@ -61,6 +76,11 @@ h6, .h6 {
 @import "../../../bootstrap/assets/stylesheets/bootstrap/tables";
 
 @import "../../../bootstrap/assets/stylesheets/bootstrap/forms";
+
+label {
+  font-weight: 400;
+  color: $gray
+}
 
 @import "../../../bootstrap/assets/stylesheets/bootstrap/buttons";
 
@@ -159,13 +179,119 @@ h6, .h6 {
 @import "../../../bootstrap/assets/stylesheets/bootstrap/button-groups";
 @import "../../../bootstrap/assets/stylesheets/bootstrap/input-groups";
 @import "../../../bootstrap/assets/stylesheets/bootstrap/navs";
+
 @import "../../../bootstrap/assets/stylesheets/bootstrap/navbar";
+  .dropdown-menu {
+      padding: 0;
+      &> li {
+        &> a {
+          padding: 10px 20px;
+        }
+      }
+
+      .divider {
+        margin: 0;
+      }
+    }
+
+    .navbar-inverse {
+      .dropdown-menu {
+          a:hover {
+             background-color: lighten($brand-success, 60%);
+            }
+      }
+
+      .navbar-toggle {
+        border: none;
+        &:hover, &:active, &:focus{
+          background-color: darken($brand-success, 10%);
+        }
+      }
+
+  }
+
+
+  .nav-transparent {
+    background-color: transparent;
+    border: none;
+    .navbar-toggle {
+        .icon-bar {
+          background-color:$brand-success;
+        }
+        &:hover, &:active, &:focus{
+          background-color: transparent;
+
+          .icon-bar {
+            background-color: darken($brand-success, 10%);
+          }
+        }
+    }
+    .navbar-brand {
+        color: $gray;
+        &:hover, &:active, &:focus {
+          color: $gray-dark;
+        }
+    }
+
+    .navbar-nav {
+      li {
+        a {
+          color: $gray;
+          &:hover, &:active, &:focus {
+              color: $gray-dark;
+              background-color: transparent;
+          }
+        }
+
+        &.open {
+          a {
+           color: $gray-dark;
+           background-color: transparent;
+            &:hover, &:active, &:focus {
+              color: $gray-dark;
+              background-color: transparent;
+          }
+          }
+        }
+        &.active {
+            a {
+               color: $gray;
+                background-color: transparent;
+                &:hover, &:active, &:focus {
+                color: $gray-dark;
+                background-color: transparent;
+                }
+              }
+        }
+      }
+    }
+    .dropdown-menu {
+        a{
+            color: $gray;
+            &:hover, &:active, &:focus {
+              color: $gray-dark;
+              background-color: lighten($gray-lighter, 10%);
+            }
+          }
+    }
+
+  }
 @import "../../../bootstrap/assets/stylesheets/bootstrap/breadcrumbs";
 @import "../../../bootstrap/assets/stylesheets/bootstrap/pagination";
 @import "../../../bootstrap/assets/stylesheets/bootstrap/pager";
 @import "../../../bootstrap/assets/stylesheets/bootstrap/labels";
+
+  .label {
+    font-weight: 400
+  }
+
 @import "../../../bootstrap/assets/stylesheets/bootstrap/badges";
+
 @import "../../../bootstrap/assets/stylesheets/bootstrap/jumbotron";
+.jumbotron {
+  background-color: lighten($gray-lighter, 10%);
+}
+
 @import "../../../bootstrap/assets/stylesheets/bootstrap/thumbnails";
 @import "../../../bootstrap/assets/stylesheets/bootstrap/alerts";
 @import "../../../bootstrap/assets/stylesheets/bootstrap/progress-bars";
