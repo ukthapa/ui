@@ -1,0 +1,39 @@
+{
+  "name": "ui",
+  "version": "1.0.0",
+  "description": "Start Up bootstrap theme with addon features - like cards, modern form elements etc..",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ukthapa/ui.git"
+  },
+  "keywords": [
+    "ui",
+    "bootstrap",
+    "bootstrap",
+    "theme",
+    "startup",
+    "ui"
+  ],
+  "author": "Uttam Kumar Thapa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ukthapa/ui/issues"
+  },
+  "homepage": "https://github.com/ukthapa/ui",
+  "devDependencies": {
+    "browser-sync": "^2.18.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.0.0",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-util": "^3.0.7",
+    "run-sequence": "^1.2.2"
+  }
+}
