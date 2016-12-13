@@ -5,30 +5,30 @@
  */
 
  //Include Google Font - ROBOTO
- @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,900,700,700italic,900italic,500italic,400italic,300italic,100italic,100);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,900,700,700italic,900italic,500italic,400italic,300italic,100italic,100);
 
 // Core variables and mixins
 @import "variables";
-@import "../../../bootstrap/assets/stylesheets/bootstrap/mixins";
+@import "../bootstrap/stylesheets/bootstrap/mixins";
 
 // Reset and dependencies
-@import "../../../bootstrap/assets/stylesheets/bootstrap/normalize";
+@import "../bootstrap/stylesheets/bootstrap/normalize";
   b, strong {
     font-weight: 500
   }
-@import "../../../bootstrap/assets/stylesheets/bootstrap/print";
-@import "../../../bootstrap/assets/stylesheets/bootstrap/glyphicons";
+@import "../bootstrap/stylesheets/bootstrap/print";
+@import "../bootstrap/stylesheets/bootstrap/glyphicons";
 
 
 // Core CSS
-@import "../../../bootstrap/assets/stylesheets/bootstrap/scaffolding";
+@import "../bootstrap/stylesheets/bootstrap/scaffolding";
 
 body {
   color: lighten($gray, 10%);
   font-weight: 300;
 }
 
-@import "../../../bootstrap/assets/stylesheets/bootstrap/type";
+@import "../bootstrap/stylesheets/bootstrap/type";
 
 //CUSTOM FONT STYLE
 
@@ -71,18 +71,18 @@ h6, .h6 {
 }
 
 
-@import "../../../bootstrap/assets/stylesheets/bootstrap/code";
-@import "../../../bootstrap/assets/stylesheets/bootstrap/grid";
-@import "../../../bootstrap/assets/stylesheets/bootstrap/tables";
+@import "../bootstrap/stylesheets/bootstrap/code";
+@import "../bootstrap/stylesheets/bootstrap/grid";
+@import "../bootstrap/stylesheets/bootstrap/tables";
 
-@import "../../../bootstrap/assets/stylesheets/bootstrap/forms";
+@import "../bootstrap/stylesheets/bootstrap/forms";
 
 label {
   font-weight: 400;
   color: $gray
 }
 
-@import "../../../bootstrap/assets/stylesheets/bootstrap/buttons";
+@import "../bootstrap/stylesheets/bootstrap/buttons";
 
 //CUSTOM BUTTONS STYLE
 
@@ -174,13 +174,13 @@ label {
 
 
 // Components
-@import "../../../bootstrap/assets/stylesheets/bootstrap/component-animations";
-@import "../../../bootstrap/assets/stylesheets/bootstrap/dropdowns";
-@import "../../../bootstrap/assets/stylesheets/bootstrap/button-groups";
-@import "../../../bootstrap/assets/stylesheets/bootstrap/input-groups";
-@import "../../../bootstrap/assets/stylesheets/bootstrap/navs";
+@import "../bootstrap/stylesheets/bootstrap/component-animations";
+@import "../bootstrap/stylesheets/bootstrap/dropdowns";
+@import "../bootstrap/stylesheets/bootstrap/button-groups";
+@import "../bootstrap/stylesheets/bootstrap/input-groups";
+@import "../bootstrap/stylesheets/bootstrap/navs";
 
-@import "../../../bootstrap/assets/stylesheets/bootstrap/navbar";
+@import "../bootstrap/stylesheets/bootstrap/navbar";
   .dropdown-menu {
       padding: 0;
       &> li {
@@ -276,47 +276,47 @@ label {
     }
 
   }
-@import "../../../bootstrap/assets/stylesheets/bootstrap/breadcrumbs";
-@import "../../../bootstrap/assets/stylesheets/bootstrap/pagination";
-@import "../../../bootstrap/assets/stylesheets/bootstrap/pager";
-@import "../../../bootstrap/assets/stylesheets/bootstrap/labels";
+@import "../bootstrap/stylesheets/bootstrap/breadcrumbs";
+@import "../bootstrap/stylesheets/bootstrap/pagination";
+@import "../bootstrap/stylesheets/bootstrap/pager";
+@import "../bootstrap/stylesheets/bootstrap/labels";
 
   .label {
     font-weight: 400
   }
 
-@import "../../../bootstrap/assets/stylesheets/bootstrap/badges";
+@import "../bootstrap/stylesheets/bootstrap/badges";
 
-@import "../../../bootstrap/assets/stylesheets/bootstrap/jumbotron";
+@import "../bootstrap/stylesheets/bootstrap/jumbotron";
 .jumbotron {
   background-color: lighten($gray-lighter, 10%);
 }
 
-@import "../../../bootstrap/assets/stylesheets/bootstrap/thumbnails";
-@import "../../../bootstrap/assets/stylesheets/bootstrap/alerts";
-@import "../../../bootstrap/assets/stylesheets/bootstrap/progress-bars";
+@import "../bootstrap/stylesheets/bootstrap/thumbnails";
+@import "../bootstrap/stylesheets/bootstrap/alerts";
+@import "../bootstrap/stylesheets/bootstrap/progress-bars";
 .progress {
 	&.progress-thin {
 		height: 6px;
 	}
 }
-@import "../../../bootstrap/assets/stylesheets/bootstrap/media";
-@import "../../../bootstrap/assets/stylesheets/bootstrap/list-group";
-@import "../../../bootstrap/assets/stylesheets/bootstrap/panels";
-@import "../../../bootstrap/assets/stylesheets/bootstrap/responsive-embed";
-@import "../../../bootstrap/assets/stylesheets/bootstrap/wells";
-@import "../../../bootstrap/assets/stylesheets/bootstrap/close";
+@import "../bootstrap/stylesheets/bootstrap/media";
+@import "../bootstrap/stylesheets/bootstrap/list-group";
+@import "../bootstrap/stylesheets/bootstrap/panels";
+@import "../bootstrap/stylesheets/bootstrap/responsive-embed";
+@import "../bootstrap/stylesheets/bootstrap/wells";
+@import "../bootstrap/stylesheets/bootstrap/close";
 .close {
 	text-shadow: none;
   	@include opacity(.8);
 }
 
 // Components w/ JavaScript
-@import "../../../bootstrap/assets/stylesheets/bootstrap/modals";
-@import "../../../bootstrap/assets/stylesheets/bootstrap/tooltip";
-@import "../../../bootstrap/assets/stylesheets/bootstrap/popovers";
-@import "../../../bootstrap/assets/stylesheets/bootstrap/carousel";
+@import "../bootstrap/stylesheets/bootstrap/modals";
+@import "../bootstrap/stylesheets/bootstrap/tooltip";
+@import "../bootstrap/stylesheets/bootstrap/popovers";
+@import "../bootstrap/stylesheets/bootstrap/carousel";
 
 // Utility classes
-@import "../../../bootstrap/assets/stylesheets/bootstrap/utilities";
-@import "../../../bootstrap/assets/stylesheets/bootstrap/responsive-utilities";
+@import "../bootstrap/stylesheets/bootstrap/utilities";
+@import "../bootstrap/stylesheets/bootstrap/responsive-utilities";

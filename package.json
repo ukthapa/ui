@@ -13,10 +13,8 @@
   "keywords": [
     "ui",
     "bootstrap",
-    "bootstrap",
     "theme",
     "startup",
-    "ui"
   ],
   "author": "Uttam Kumar Thapa",
   "license": "ISC",
@@ -29,6 +27,8 @@
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^2.3.0",
     "gulp-imagemin": "^3.1.1",
     "gulp-plumber": "^1.1.0",
     "gulp-sass": "^3.0.0",
