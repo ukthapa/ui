@@ -29,6 +29,14 @@ var assetsURL       = "./app/",
     prodUrl         = "./prod-theme/";
 
 
+
+//**********************************************
+//
+// DEV TASK
+// 
+//**********************************************
+
+
 ///////////////////////////////////////////
 //
 //  Task: Optimize image
@@ -42,16 +50,6 @@ gulp.task('imgoptimize.dev', function () {
 });
 
 
-///////////////////////////////////////////
-//
-//  Task: Copy images to Production Build
-//  
-//////////////////////////////////////////
-
-gulp.task('copyimages.prod', function () {
-    gulp.src(devUrl + 'images/*.{png,jpg,jpeg,gif,svg}')
-    .pipe(gulp.dest(prodUrl + "images"));    
-});
 
 
 ///////////////////////////////////////////
@@ -66,9 +64,11 @@ gulp.task( 'sass.dev', function() {
             gutil.log(gutil.colors.red(error.message));
             this.emit('end');
         })) // report errors w/o stopping Gulp
+        .pipe(sourcemaps.init())
         .pipe(sass())
         .pipe(autoprefixer({browsers: ['last 3 version']}))
         .pipe( gulp.dest(devUrl + "css") )
+        .pipe(sourcemaps.write())
         .pipe(reload({stream:true}));
 });
 
@@ -128,6 +128,27 @@ gulp.task('watch', function() {
 //////////////////////////////////////////
 
 gulp.task('default', ['sass.dev', 'browserSync', 'watch']);
+
+
+
+//**********************************************
+//
+// PRODUCTION TASK
+// 
+//**********************************************
+
+///////////////////////////////////////////
+//
+//  Task: Copy images to Production Build
+//  
+//////////////////////////////////////////
+
+gulp.task('copyimages.prod', function () {
+    gulp.src(devUrl + 'images/*.{png,jpg,jpeg,gif,svg}')
+    .pipe(gulp.dest(prodUrl + "images"));    
+});
+
+
 
 
 

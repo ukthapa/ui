@@ -6098,3 +6098,81 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+
+.card {
+  position: relative;
+  border: 1px solid #cdcdcd;
+  margin-bottom: 20px; }
+  .card.card-block, .card .card-block {
+    padding: 1.5rem; }
+  .card .card-header {
+    padding: 1.5rem;
+    padding-bottom: 0;
+    margin: 0;
+    background-color: #cdcdcd; }
+  .card .card-title {
+    margin-top: 0; }
+  .card .img-fluid {
+    max-width: 100%;
+    height: auto;
+    width: 100% \9; }
+  .card .list-group {
+    margin-bottom: 0; }
+  .card.text-xs-center {
+    text-align: center; }
+  .card.text-xs-right {
+    text-align: right; }
+  .card blockquote {
+    padding: 0;
+    margin: 0;
+    border-left: 0; }
+
+.card-primary {
+  background-color: #05668d;
+  border: 1px solid #03425c;
+  color: #96defb; }
+  .card-primary footer {
+    color: #96defb; }
+
+.card-success {
+  background-color: #00a896;
+  border: 1px solid #007568;
+  color: #a8fff6; }
+  .card-success footer {
+    color: #a8fff6; }
+
+.card-info {
+  background-color: #2ab7ca;
+  border: 1px solid #2191a0;
+  color: #f6fcfd; }
+  .card-info footer {
+    color: #f6fcfd; }
+
+.card-warning {
+  background-color: #f6aa1c;
+  border: 1px solid #d68f09;
+  color: white; }
+  .card-warning footer {
+    color: white; }
+
+.card-danger {
+  background-color: #d9243a;
+  border: 1px solid #ad1d2e;
+  color: #fffdfd; }
+  .card-danger footer {
+    color: #fffdfd; }
+
+.card-outline-primary {
+  border: 1px solid #03425c; }
+
+.card-outline-success {
+  border: 1px solid #007568; }
+
+.card-outline-info {
+  border: 1px solid #2191a0; }
+
+.card-outline-warning {
+  border: 1px solid #d68f09; }
+
+.card-outline-danger {
+  border: 1px solid #ad1d2e; }
