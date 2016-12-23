@@ -93,6 +93,49 @@ gulp.task( 'html.dev', function() {
 
 ///////////////////////////////////////////
 //
+//  Task: Copy Bootstrap JS 
+//  
+//////////////////////////////////////////
+
+gulp.task('copyBootstrapJS', function(){
+    gulp.src(assetsURL + "bootstrap/javascripts/bootstrap.min.js")
+    .pipe(gulp.dest(devUrl + "vendors"))
+    .pipe(reload({stream:true}));
+});
+
+
+
+///////////////////////////////////////////
+//
+//  Task: Copy All Vendors File and folders
+//  
+//////////////////////////////////////////
+
+gulp.task('copyVendors', function(){
+    gulp.src(assetsURL + "vendors/*")
+    .pipe(gulp.dest(devUrl + "vendors"))
+    .pipe(reload({stream:true}));
+});
+
+
+
+///////////////////////////////////////////
+//
+//  Task: Copy Custom JS
+//  
+//////////////////////////////////////////
+
+gulp.task('copyCustomJS', function(){
+    gulp.src(assetsURL + "custom-js/*")
+    .pipe(gulp.dest(devUrl + "js"))
+    .pipe(reload({stream:true}));
+});
+
+
+
+
+///////////////////////////////////////////
+//
 //  Task: Browser-Sync
 //  
 //////////////////////////////////////////
