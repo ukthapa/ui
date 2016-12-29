@@ -1998,7 +1998,7 @@
           <div class="col-lg-4">
             <h2 id="nav-tabs">Tabs</h2>
             <div class="bs-component">
-              <ul class="nav nav-tabs">
+              <ul id="myTab" class="nav nav-tabs">
                 <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
                 <li><a href="#profile" data-toggle="tab">Profile</a></li>
                 <li class="disabled"><a>Disabled</a></li>
@@ -2646,20 +2646,21 @@
 				</div>
 
 				<div class="row">
-					<div class="col-lg-12">
-						<div class="card card-block">
+					<div class="col-lg-12 card-group">
+						<div class="card card-block" style="width: 33.3333%;  float:left;">
 						  <h4 class="card-title">Special title treatment</h4>
-						  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+						  <p class="card-text">With supporting text below as a natural lead-in to additional content.sdfsdfdsfdsfds sdfgjsdfgfsd uihsdfuihfsdhfesi sdfhisdhfisdfhifsd</p>
 						  <a href="#" class="btn btn-primary">Go somewhere</a>
 						</div>
 
-						<div class="card card-block text-xs-center">
+						<div class="card card-block text-xs-center" style="width: 33.3333%;  float:left;">
 						  <h4 class="card-title">Special title treatment</h4>
-						  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+						  <p class="card-text">With supporting text below as a natural lead-in to additional content. </p>
+						  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti eaque distinctio atque ab possimus assumenda omnis provident libero odit totam ad veritatis nemo autem sed modi, nesciunt perspiciatis, unde aliquid.</p>
 						  <a href="#" class="btn btn-primary">Go somewhere</a>
 						</div>
 
-						<div class="card card-block text-xs-right">
+						<div class="card card-block text-xs-right" style="width: 33.3333%; float:left;">
 						  <h4 class="card-title">Special title treatment</h4>
 						  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
 						  <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -3077,11 +3078,13 @@
 
 
 
-<script type="text/javascript" src="./vendors/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="vendors/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 	
-<script type="text/javascript" src="./vendors/bootstrap.min.js"></script>	
-<script type="text/javascript" src="./js/theme.js"></script>
+<script type="text/javascript" src="vendors/bootstrap.min.js"></script>
+<script type="text/javascript" src="vendors/responsive-tabs.js"></script>	
+<script type="text/javascript" src="vendors/jquery.hc-sticky.js"></script>			
+<script type="text/javascript" src="js/theme.js"></script>
 <script type="text/javascript">
 	$(function () {
 	  $('[data-toggle="tooltip"]').tooltip()
@@ -3091,6 +3094,11 @@
 	  $('[data-toggle="popover"]').popover()
 	})
 
+
+    $('#myTab').tabCollapse({
+    tabsClass: 'hidden-sm hidden-xs',
+    accordionClass: 'visible-sm visible-xs'
+});
 
 </script>
 </body>

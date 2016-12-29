@@ -143,7 +143,7 @@ gulp.task('copyCustomJS', function(){
 gulp.task( 'browserSync', function() {
     browserSync.init([devUrl + 'css/*.css',  devUrl + '*.html'], {
         server: {
-          baseDir: devUrl
+          baseDir: "/Users/Uttam/Work/workflow/ui/dev-theme"
         }
     }); 
 });
